@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parent Page</title>
+    <script src="script.js"></script>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background: rgb(100, 150, 100);
+        }
+    </style>
+</head>
+<body>
+    <h1>P.O.C.</h1>
+    <h2>iFrame Security</h2>
+
+    <button id="buttonParent">Send data to child frame</button>
+    <pre id="message"></pre>
+    <iframe src="http://8.12.22.45/" 
+            frameborder="0"
+            id="iframe"
+            sandbox="allow-scripts allow-same-origin"
+            style="width: 100%; min-height: 300px;"></iframe>
+</body>
+</html>
