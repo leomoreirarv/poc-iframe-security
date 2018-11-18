@@ -27,7 +27,7 @@
                 return;
 
             let message = document.getElementById("message");
-            message.innerHTML = JSON.stringify(e.data);
+            message.innerHTML = JSON.stringify(e.data, undefined, 2);
         });
     }
     
